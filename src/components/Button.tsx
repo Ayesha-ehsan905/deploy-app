@@ -13,4 +13,9 @@ export const Button = styled("button", {
   p: "15px 32px",
   textAlign: "center",
   display: 'inline-block',
+
+  "&:hover": {
+    backgroundColor:'$white',
+    color:'$bg_dark',
+  }
 });

@@ -1,17 +1,18 @@
-import React from 'react';
-import { styled } from '../theming/darkTheme';
+import React from "react";
+import { styled } from "../theming/darkTheme";
 
-export const Box = styled('div',{
-    variants:{
-        bg:{
-           dark:{
-            backgroundColor: "$bg_dark_div",
-        },
-        light:{
-               backgroundColor: "$bg_light_div",
-
-           }
-        }
-    }
+export const Box = styled("div", {
+    
+  variants: {
+    //utlis
+    postion: {
+      right: {
+        position: "relative",
+        float: "right",
+        left: "700px",
+        top: "-44px",
+        display:'flex',
+      },
+    },
+  },
 });
-

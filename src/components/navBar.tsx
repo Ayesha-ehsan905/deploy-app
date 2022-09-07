@@ -6,7 +6,8 @@ import { styled } from "../theming/darkTheme";
 export const Navbar = styled("nav", {
     //utlis
   linearGradient: " 90.18deg, rgba(50, 56, 91, 0.57) 0%, rgba(26, 31, 65, 0.57) 100%",
-  p: "10px",
+  pb: "68px",
+  display:'inherit',
   
   color: "$white",
   br: " 0px 0px 15px 15px",
