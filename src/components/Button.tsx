@@ -1,22 +1,16 @@
 import { styled } from "../theming/darkTheme";
 
 export const Button = styled("button", {
-  
-  color: "$primary",
-  backgroundColor: "$bg_white",
-  borderRadius: "8px",
-  border: "3px solid #aba0a0",
-  pt: "4px ",
-  pb: "4px",
-  fontSize: "$medium",
-  fontWeight: "$medium",
-  cursor: "pointer",
-  textAlign: "left",
-  transition: "borderColor 0.25s",
-  float:"right",
-  ml:"5px",
-  '&:hover': {
-    borderColor: 'black',
-  },
-
+  color: "$white",
+  br: "8px",
+  bg: "#B79313",
+  border: "1px solid #FF9E00",
+  ml: "50px",
+  mr: "20px",
+ 
+  fontSize:'$1',
+  fonts:'$sans',
+  p: "15px 32px",
+  textAlign: "center",
+  display: 'inline-block',
 });

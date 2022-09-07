@@ -1,49 +1,69 @@
 const defaultUtlis ={
-    m: (value) => ({
+    m: (value: unknown) => ({
         margin: value,
       }),
-      mt: (value) => ({
+      mt: (value: unknown) => ({
         marginTop: value,
       }),
-      mr: (value) => ({
+      mr: (value: unknown) => ({
         marginRight: value,
       }),
-      mb: (value) => ({
+      mb: (value: unknown) => ({
         marginBottom: value,
       }),
-      ml: (value) => ({
+      ml: (value: unknown) => ({
         marginLeft: value,
       }),
-      mx: (value) => ({
+      mx: (value: unknown) => ({
         marginLeft: value,
         marginRight: value,
       }),
-      my: (value) => ({
+      my: (value: unknown) => ({
         marginTop: value,
         marginBottom: value,
       }),
 
-      p: (value) => ({
+      p: (value: unknown) => ({
         padding: value,
       }),
-      pt: (value) => ({
+      pt: (value: unknown) => ({
         paddingTop: value,
       }),
-      pr: (value) => ({
+      pr: (value: unknown) => ({
         paddingRight: value,
       }),
-      pb: (value) => ({
+      pb: (value: unknown) => ({
         paddingBottom: value,
       }),
-      pl: (value) => ({
+      pl: (value: unknown) => ({
         paddingLeft: value,
       }),
       
-      br: (value) => ({
+      br: (value: unknown) => ({
         borderRadius: value,
       }),
-      ft: (value) => ({
+      border: (value: unknown) => ({
+        border: value,
+      }),
+      ft: (value: unknown) => ({
         fontSize: value,
+      }),
+      bg: (value: unknown) => ({
+        backgroundColor: value,
+      }),
+      linearGradient: (value:unknown) => ({
+        backgroundImage: `linear-gradient(${value})`,
+      }),
+      fs: (value: unknown) => ({
+        fontStyle: value,
+      }),
+      display: (value: unknown) => ({
+        display: value,
+       
+      }),
+      justifyContent: (value: unknown) => ({
+        
+        justifyContent:value,
       }),
 };
 

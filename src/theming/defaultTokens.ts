@@ -2,14 +2,20 @@ import defaultColors from "./colors";
 import defaultUtlis from "./defaultUtlis";
 
 const defaultTokens = {
+  fonts: {
+    sans: "Space Grotesk",
+    mono: "Menlo, Monaco, 'Lucida Console', 'Courier New', monospace;",
+  },
   fontSizes: {
     1: "13px",
     2: "15px",
-    3: "17px",
-    4: "30px",
+    3: "16px",
+    4: "17px",
+    5: "30px",
   },
 
   fontWeight: {
+    small:"400",
     medium: "500",
     semiBold: "600",
     Bold: "700",
@@ -22,6 +28,12 @@ const defaultTokens = {
     lg: "1.37rem",
     xl: "2.25rem",
   },
+  display:{
+   1:"flex",
+   2:"inline",
+   3:"block",
+   4:"inline-block",
+ }
 };
 
 const commonTheme = {

@@ -1,10 +1,11 @@
 import { Text } from "../components/Text";
-import React from 'react'
-function About() {
+import {Box} from "../components/Box";
+import React from 'react';
+const About= () => {
   return (
-    <div style={{ textAlign: "center" }}>
+    <Box style={{ textAlign: "center" }}>
       <Text> Welcome to The About us Page</Text>
-    </div>
+    </Box>
   );
 }
 

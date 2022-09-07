@@ -24,8 +24,8 @@ const defaultColors ={
       bg_muted:"#6c757d",
       bg_white:"#fff",
       bg_body:"#212529",
-
-
+      bg_dark_div :"#0d1023",
+      bg_light_div :"#FFFFFF",
 
    };
 
