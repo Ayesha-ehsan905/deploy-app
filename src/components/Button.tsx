@@ -1,21 +1,51 @@
 import { styled } from "../theming/darkTheme";
 
 export const Button = styled("button", {
-  color: "$white",
-  br: "8px",
-  bg: "#B79313",
-  border: "1px solid #FF9E00",
-  ml: "50px",
-  mr: "20px",
- 
-  fontSize:'$1',
-  fonts:'$sans',
-  p: "15px 32px",
-  textAlign: "center",
-  display: 'inline-block',
-
-  "&:hover": {
-    backgroundColor:'$white',
-    color:'$bg_dark',
-  }
+  variants: {
+    style: {
+      Register_btn: {
+        boxSizing: "border-box",
+        width: "163px",
+        height: "40px",
+        ml: "30px",
+        mr: "30px",
+        mt: "20px",
+        bg: "#B79313",
+        border: "1px solid #FF9E00",
+        br: "8px",
+        "&:hover": {
+          backgroundColor: "$white",
+          color: "$bg_dark",
+        },
+        "@bp1": {
+          width: "131px",
+          height: "18px",
+          ml: "15px",
+          mr: "15px",
+          mt: "21px",
+         
+        },
+      },
+      side_drawer: {
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        height: "24px",
+        width: "30px",
+        backgroundColor: "transparent",
+        border: "none",
+        position: "absolute",
+        left: "10px",
+        top: "20px",
+        mr: "20px",
+        ml: "px",
+        mt: "3px",
+        cursor: "pointer",
+        boxSizing: "border-box",
+        "&:focus": {
+          // outline:'none',
+        },
+      },
+    },
+  },
 });

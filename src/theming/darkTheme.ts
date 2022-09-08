@@ -20,9 +20,10 @@ const darktheme = createStitches({
     },
   },
   media: {
-    bp1: "(min-width: 640px)",
-    bp2: "(min-width: 768px)",
-    bp3: "(min-width: 1024px)",
+    bp0: '(max-width: 640px) and (min-width:480px)',
+    bp1: '(min-width: 650px) and (max-width:780px)',
+    bp2: '(min-width: 768px)',
+    bp3: '(min-width: 1024px)',
   },
   utils: {
     ...commonTheme.utils,
@@ -34,13 +35,10 @@ const injectGlobalStyles = darktheme.globalCss({
     margin: 0,
     padding: 0,
     backgroundColor: "$bg_dark_div",
+    height:'100%',
   },
-  nav: {
-    //  display: "flex",
-    // flexDirection: "row",
-    // justifyContent: "space-between",
-    // alignItems: "center",
-  },
+  
+
 });
 
 injectGlobalStyles();

@@ -1,22 +1,32 @@
 import { styled } from "../theming/darkTheme";
 
 export const Text = styled("p", {
-
-  variants: {
-    size: {
-      sm: {
-        fontFamily: "$sans",
-        fs: "normal",
-        fontWeight: "$semiBold",
-        fontSize: "$3",
-        color: "$white",
-        ml: "30px",
-        // color: "#fff",
-        
+  
+  fontFamily: "$sans",
+  fs: " normal",
+  fontWeight: "$small",
+  fontSize: "$3",
+  lineHeight: "20px",
+  color: "$white",
+ 
+  variants:{
+    align:{
+      center:{
+        mt: '31px',
+        ml: '40px',
+        "@bp1":{
+          ml:'10px',
+          ft:'13px',
+        }
       },
+      left:{
+       ml:'20px',
 
-      md: {},
-      lg: {},
+      },
     },
+
   },
+  
+  
+
 });
