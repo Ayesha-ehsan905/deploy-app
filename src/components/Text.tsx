@@ -16,7 +16,7 @@ export const Text = styled("p", {
         ml: '40px',
         "@bp1":{
           ml:'10px',
-          ft:'13px',
+          ft:'14px',
         }
       },
       left:{

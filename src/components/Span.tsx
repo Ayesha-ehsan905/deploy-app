@@ -12,6 +12,7 @@ export const Span = styled("span", {
         mt:'5px',
         border: '1px solid #FFFFFF',
         width:'20px',
+        
       }
         
       }

@@ -9,10 +9,10 @@ export const Image = styled("img", {
         top: "23px",
         ml: "20px",
         "@bp1":{
-          width:'100px',
+          width:'120px',
           top:'30px',
-          ml:'5px',
-          left:'0px',
+          // ml:'15px',
+          left:'20px',
         }
       },
     },

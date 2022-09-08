@@ -18,11 +18,14 @@ export const Button = styled("button", {
           color: "$bg_dark",
         },
         "@bp1": {
-          width: "131px",
+          width: "120px",
           height: "18px",
           ml: "15px",
           mr: "15px",
           mt: "21px",
+          pt:'11px',
+          pb:'20px',
+          ft:'13px',
          
         },
       },
