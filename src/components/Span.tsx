@@ -4,16 +4,13 @@ import SideDrawer from "./sideDrawer/sideDrawer";
 
 export const Span = styled("span", {
   variants: {
-    //for lines
+    //for lines for tooglebutton of mobile drawer
     tooglebtn_lines:{
       line:{
-        
-      '@bp0':{
         mt:'5px',
         border: '1px solid #FFFFFF',
         width:'20px',
-        
-      }
+      
         
       }
     },

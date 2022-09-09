@@ -8,12 +8,12 @@ export const Image = styled("img", {
         left: "30px",
         top: "23px",
         ml: "20px",
-        "@bp1":{
-          width:'120px',
-          top:'30px',
-          // ml:'15px',
-          left:'20px',
-        }
+        // "@bp1":{
+        //   width:'120px',
+        //   top:'30px',
+        //   // ml:'15px',
+        //   left:'20px',
+        // }
       },
     },
   },

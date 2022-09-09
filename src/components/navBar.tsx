@@ -15,12 +15,12 @@ export const Navbar = styled("nav", {
         justifyContent: "end",
         mr: "30px",
         ml: "30px",
-        "@bp1":{
-          // width:'100%',
-          left:'0px',
-          mr:'30px',
-          ml:'30px',
-        },
+        // "@bp1":{
+        //   // width:'100%',
+        //   left:'0px',
+        //   mr:'30px',
+        //   ml:'30px',
+        // },
         
       },
 
