@@ -18,9 +18,13 @@ const darktheme = createStitches({
     display: {
       ...commonTheme.theme.display,
     },
+    keyframes: {
+      ...commonTheme.keyframes,
+    },
   },
   media: {
-    bp0: "(max-width: 660px) and (min-width:480px)",
+    // bp0: "(max-width: 660px) and (min-width:480px)",
+    bp0: " (max-width:659px)",
     bp1: "(min-width: 660px)",
     bp2: "(min-width: 661px) and (max-width:800px)",
     bp3: "(min-width: 801px) and (max-width:950px)",
@@ -32,11 +36,18 @@ const darktheme = createStitches({
 });
 
 const injectGlobalStyles = darktheme.globalCss({
+  html: {
+    margin: 0,
+    padding: 0,
+    // backgroundColor: "$bg_dark_div",
+    height: "100%",
+  },
   body: {
     margin: 0,
     padding: 0,
     backgroundColor: "$bg_dark_div",
     height: "100%",
+    width: "100%",
   },
 });
 

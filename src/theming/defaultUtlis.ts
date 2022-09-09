@@ -1,4 +1,8 @@
 const defaultUtlis = {
+  width: (value: unknown) => ({
+    width: value,
+  }),
+
   m: (value: unknown) => ({
     margin: value,
   }),

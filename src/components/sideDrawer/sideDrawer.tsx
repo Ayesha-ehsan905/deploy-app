@@ -14,6 +14,7 @@ const SideDrawer = (props) => {
       <Box>
         <Navbar navbar_Style={"mobile_navebar"}>
           <Text
+            color={"white"}
             align={"left"}
             css={{
               marginTop: "30px",
@@ -29,12 +30,16 @@ const SideDrawer = (props) => {
 
           <Span SideDrawer={"line"} />
           <Box postion={"left"}>
-            <Text align={"left"}>HOME</Text>
+            <Text align={"left"} color={"white"}>
+              HOME
+            </Text>
           </Box>
           <Span SideDrawer={"line"} css={{ marginTop: "40px" }} />
           <Span SideDrawer={"line"} css={{ marginTop: "65px" }} />
           <Box postion={"left"} css={{ marginTop: "65px" }}>
-            <Text align={"left"}>ABOUT</Text>
+            <Text align={"left"} color={"white"}>
+              ABOUT
+            </Text>
           </Box>
 
           <Span SideDrawer={"line"} css={{ marginTop: "105px" }} />
@@ -43,7 +48,9 @@ const SideDrawer = (props) => {
             postion={"left"}
             css={{ backgroundImage: "none", marginTop: "135px" }}
           >
-            <Text align={"left"}>LOGIN</Text>
+            <Text align={"left"} color={"white"}>
+              LOGIN
+            </Text>
           </Box>
 
           <Button

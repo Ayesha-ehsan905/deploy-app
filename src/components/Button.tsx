@@ -10,7 +10,6 @@ export const Button = styled("button", {
   variants: {
     style: {
       basestyle: {
-        // boxSizing: "border-box",
         width: "163px",
         height: "40px",
         ml: "30px",

@@ -1,9 +1,11 @@
 import defaultColors from "./colors";
 import defaultUtlis from "./defaultUtlis";
+import animations from "./keyFrames";
 
 const defaultTokens = {
   fonts: {
     sans: "Space Grotesk",
+    inter: "Inter",
     mono: "Menlo, Monaco, 'Lucida Console', 'Courier New', monospace;",
   },
   fontSizes: {
@@ -15,7 +17,7 @@ const defaultTokens = {
   },
 
   fontWeight: {
-    small:"400",
+    small: "400",
     medium: "500",
     semiBold: "600",
     Bold: "700",
@@ -28,12 +30,12 @@ const defaultTokens = {
     lg: "1.37rem",
     xl: "2.25rem",
   },
-  display:{
-   1:"flex",
-   2:"inline",
-   3:"block",
-   4:"inline-block",
- }
+  display: {
+    1: "flex",
+    2: "inline",
+    3: "block",
+    4: "inline-block",
+  },
 };
 
 const commonTheme = {
@@ -43,6 +45,7 @@ const commonTheme = {
     // fontSizes:defaultTokens.fontSizes,
   },
   utils: defaultUtlis,
+  keyframes: animations,
 };
 
 export default commonTheme;

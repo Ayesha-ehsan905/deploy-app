@@ -2,20 +2,20 @@ import React from "react";
 import { styled } from "../theming/darkTheme";
 
 export const Box = styled("div", {
-  overflowX: "clip",
-  overflowy: "clip",
+  // overflowX: "clip",
+  // overflowy: "clip",
+
   variants: {
     //utlis
     postion: {
       right: {
-        position: "relative",
-        float: "right",
-        left: "700px",
-        top: "-44px",
-        display: "flex",
+        position: "absolute",
+        width: "100%",
+        height: "200px",
+        left: "0px",
+        top: "1200px",
       },
       left: {
-        overflowY:"clip",
         position: "absolute",
         width: "294px",
         height: "40px",
@@ -26,5 +26,4 @@ export const Box = styled("div", {
       },
     },
   },
- 
 });
