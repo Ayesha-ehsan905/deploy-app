@@ -24,6 +24,20 @@ export const Box = styled("div", {
         linearGradient:
           " 90deg, rgba(217, 2217, 217, 0.57) 0%, rgba(217, 217, 217, 0) 100%",
       },
+      center: {
+        boxSizing: "border-box",
+
+        position: "absolute",
+        width: "628px",
+        height: "197px",
+        left: "77px",
+        top: "1000px",
+
+        linearGradient:
+          " 153.32deg, rgba(255, 255, 255, 0.3) -65.62%, rgba(255, 255, 255, 0.1) 83.28%",
+        boxShadow: "0px 4px 24px -1px rgba(0, 0, 0, 0.2)",
+        br: "12px",
+      },
     },
   },
 });

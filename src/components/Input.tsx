@@ -14,9 +14,9 @@ export const Input = styled("input", {
         linearGradient:
           " 90.18deg, rgba(50, 56, 91, 0.57) 0%, rgba(26, 31, 65, 0.57) 100%",
         position: "absolute",
-        left: "400px",
-        width: "451px",
-        top: "500px",
+        // left: "400px",
+        width: "50%",
+        // top: "500px",
         padding: "7px 15px",
         height: "56px",
         border: "1px solid #FFF",
@@ -27,6 +27,12 @@ export const Input = styled("input", {
 
         "&::placeholder": {
           color: "white",
+        },
+        "@bp0": {
+          width: "77%",
+        },
+        "@bp2": {
+          width: "77%",
         },
       },
       lg: {

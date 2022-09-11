@@ -27,8 +27,11 @@ const darktheme = createStitches({
     bp0: " (max-width:659px)",
     bp1: "(min-width: 660px)",
     bp2: "(min-width: 661px) and (max-width:800px)",
-    bp3: "(min-width: 801px) and (max-width:950px)",
-    bp4: "(min-width: 1024px)",
+    // bp3: "(min-width: 801px) and (max-width:1000px)",
+    bp3: "(min-width:801px) and (max-width:900px)",
+    bp4: "(min-width:901px)and (max-width:970px)",
+    bp5: "(min-width: 970px) and (max-width:1070px)",
+    // bp6: "(min-width:1080)",
   },
   utils: {
     ...commonTheme.utils,
@@ -48,6 +51,10 @@ const injectGlobalStyles = darktheme.globalCss({
     backgroundColor: "$bg_dark_div",
     height: "100%",
     width: "100%",
+  },
+  a: {
+    textDecoration: "none",
+    color: "$white",
   },
 });
 

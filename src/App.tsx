@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "./components/Button";
 import Home from "./views/Home";
 import About from "./views/About";
+import Error from "./views/Error";
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,16 +11,18 @@ import {
   useNavigate,
 } from "react-router-dom";
 
-
-
-const App : React.FC = () =>{
-  const navigate  = useNavigate();
+const App: React.FC = () => {
   return (
     <>
-     <Home></Home>
-     
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route element={<Error />} />
+        </Routes>
+      </Router>
     </>
   );
-}
+};
 
-export default App
+export default App;

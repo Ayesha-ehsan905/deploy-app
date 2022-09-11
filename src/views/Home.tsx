@@ -12,75 +12,35 @@ import DrawerToggleButton from "../components/sideDrawer/DrawerToggleButton";
 import { styled } from "../theming/darkTheme";
 import { Input } from "../components/Input";
 import { BiSearchAlt2 } from "react-icons/bi";
+import NAVBAR from "./NAVBAR";
 const Home = () => {
-  const [sideDrawerOpen, setsideDrawer] = useState<boolean>(false);
-
-  const drawerTogglerClickHandler = () => {
-    setsideDrawer(!sideDrawerOpen);
-    return sideDrawerOpen;
-  };
-  const drawerCloseClickHandler = () => {
-    setsideDrawer(false);
-    return sideDrawerOpen;
-  };
-
-  //check if it's close then hide the side drawer
-
-  let sideDrawer;
-  if (sideDrawerOpen) {
-    sideDrawer = <SideDrawer drawer={drawerCloseClickHandler} />;
-  }
   return (
     <>
-      <Box css={{}}>
-        {/* NAVBAR BOX */}
-        <Box>
-          {/* Normal Navbar */}
-          <Navbar navbar_Style={"main_navbar"}>
-            <DrawerToggleButton
-              drawerClickHandler={drawerTogglerClickHandler}
-            />
-            <Box>
-              <Image size={"sm"} src={logo} />
-            </Box>
-            <Box
-              css={{
-                display: "flex",
-                justifyContent: "end",
-                "@bp0": {
-                  display: "none",
-                },
-              }}
-            >
-              <Text color={"white"} align={"center"}>
-                HOME
-              </Text>
-              <Text color={"white"} align={"center"}>
-                ABOUT
-              </Text>
-              <Text color={"white"} align={"center"}>
-                |
-              </Text>
-              <Text color={"white"} align={"center"}>
-                LOGIN
-              </Text>
-              <Button style={"basestyle"}>REGISTER</Button>
-            </Box>
-          </Navbar>
-
-          {/* Drawer Menu */}
-          {sideDrawer}
-        </Box>
-        {/* 1st row */}
-        <Box>
-          {/* 1strow  Heading*/}
+      <NAVBAR />
+      <Box>
+        {/* 1st row Parent Div */}
+        <Box
+          as="div"
+          css={{
+            position: "relative",
+            width: "100%",
+            overflowX: "clip",
+          }}
+        >
+          {/* 1strow  Heading child Div*/}
           <Box
             as="div"
             css={{
               position: "absolute",
-              width: "500px",
+              width: "50%",
               left: "74px",
               top: "170px",
+              "@bp0": {
+                width: "70%",
+              },
+              "@bp2": {
+                width: "80%",
+              },
             }}
           >
             <Text
@@ -89,6 +49,15 @@ const Home = () => {
               as="h1"
               css={{
                 ft: "32px",
+                "@bp0": {
+                  ft: "24px",
+                },
+                "@bp3": {
+                  ft: "20px",
+                },
+                "@bp4": {
+                  ft: "28px",
+                },
               }}
             >
               Active Cyber Threats Require Better Insurance
@@ -98,42 +67,94 @@ const Home = () => {
               fonts={"inter"}
               css={{
                 ft: "24px",
+                "@bp0": {
+                  ft: "21px",
+                },
+                "@bp3": {
+                  ft: "18px",
+                },
+                "@bp4": {
+                  ft: "20px",
+                },
               }}
             >
               Integrated security and cyber insurance protect you from risks
               before they strike and enable faster recovery if they do
             </Text>
-          </Box>
-          {/* 1st row Image */}
-          <Box as="div">
+
             <Image src={pic1} size={"medium"} />
+            <Image src={pic2} size={"large"} />
           </Box>
-          {/* 1st row text */}
         </Box>
         {/* 2nd row input box */}
-        <Box as="div">
-          <Input size={"sm"} placeholder="Search"></Input>
-          <BiSearchAlt2
-            style={{
-              backgroundColor: "transparent",
-              color: "white",
+        {/* Parent Div  2nd row */}
+        <Box
+          as="div"
+          css={{
+            position: "relative",
+            width: "100%",
+          }}
+        >
+          <Box
+            as="div"
+            css={{
               position: "absolute",
-              left: "810px",
-              top: "520px",
+              left: "400px",
+              top: "500px",
+              width: "50%",
+              "@bp0": {
+                width: "100%",
+                left: "74px",
+                top: "800px",
+              },
+              "@bp2": {
+                width: "100%",
+                left: "74px",
+                top: "800px",
+              },
             }}
-          />
+          >
+            <Input size={"sm"} placeholder="Search"></Input>
+            <BiSearchAlt2
+              style={{
+                backgroundColor: "transparent",
+                color: "white",
+                position: "absolute",
+                left: "290px",
+                top: "23px",
+              }}
+            />
+          </Box>
         </Box>
 
         {/* 3rd row */}
-        <Box>
+        <Box
+          css={{
+            position: "relative",
+            width: "100%",
+            "@bp0": {
+              top: "300px",
+            },
+            "@bp2": {
+              top: "300px",
+            },
+          }}
+        >
           {/* 3rdrow  Heading*/}
           <Box
             as="div"
             css={{
               position: "absolute",
-              width: "500px",
+              width: "50%",
               left: "74px",
               top: "600px",
+
+              "@bp0": {
+                width: "75%",
+              },
+              "@bp2": {
+                width: "80%",
+              },
             }}
           >
             <Text
@@ -146,21 +167,6 @@ const Home = () => {
             >
               How we're better
             </Text>
-          </Box>
-          {/* 3rd row Image */}
-          <Box as="div">
-            <Image src={pic2} size={"large"} />
-          </Box>
-          {/* 3rd row text */}
-          <Box
-            as="div"
-            css={{
-              position: "absolute",
-              width: "500px",
-              left: "74px",
-              top: "660px",
-            }}
-          >
             <Text
               color={"muted"}
               fonts={"inter"}
@@ -176,24 +182,21 @@ const Home = () => {
               lowering premiums. This means less risk and more uptime for our
               clients.
             </Text>
+
+            <Image src={pic2} size={"large"} />
           </Box>
         </Box>
-      </Box>
-      {/* //Footer */}
-      <Box
-        postion={"right"}
-        css={{
-          bg: "black",
-        }}
-      >
-        <Text>Hellow World</Text>
-        <Image
-          src={logo}
+
+        {/* 4th rwo parent div */}
+        <Box
+          as="div"
           css={{
-            left: "200px",
-            top: "60px",
+            position: "relative",
+            width: "100%",
           }}
-        />
+        >
+          <Box postion={"center"}>Helllwp Worlds</Box>
+        </Box>
       </Box>
     </>
   );

@@ -33,7 +33,6 @@ export const Navbar = styled("nav", {
         top: "0px",
         linearGradient: " 90.18deg, #32385B 0%, #1A1F41 100%",
         br: "0px 15px 15px 0px",
-        // background: linear-gradient(90.18deg, #32385B 0%, #1A1F41 100%);
         backdropFilter: "blur(20px)",
       },
     },
