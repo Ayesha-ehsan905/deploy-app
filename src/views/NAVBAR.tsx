@@ -34,62 +34,56 @@ const NAVBAR = () => {
   }
   return (
     <>
-      <Box css={{}}>
+      <Box css={{ width: "100%" }}>
         {/* NAVBAR BOX */}
-        <Box>
-          {/* Normal Navbar */}
-          <Navbar navbar_Style={"main_navbar"}>
-            <DrawerToggleButton
-              drawerClickHandler={drawerTogglerClickHandler}
-            />
-            <Box>
-              <Image size={"sm"} src={logo} />
-            </Box>
-            <Box
-              css={{
-                display: "flex",
-                justifyContent: "end",
-                "@bp0": {
-                  display: "none",
-                },
-              }}
-            >
-              <Text color={"white"} align={"center"}>
-                <Link to="/"> HOME</Link>
-              </Text>
-              <Text color={"white"} align={"center"}>
-                <Link to="/about">ABOUT</Link>
-              </Text>
-              <Text color={"white"} align={"center"}>
-                |
-              </Text>
-              <Text color={"white"} align={"center"}>
-                LOGIN
-              </Text>
-              <Button style={"basestyle"}>REGISTER</Button>
-            </Box>
-          </Navbar>
 
-          {/* Drawer Menu */}
-          {sideDrawer}
-        </Box>
+        {/* Normal Navbar */}
+        <Navbar navbar_Style={"main_navbar"}>
+          <DrawerToggleButton drawerClickHandler={drawerTogglerClickHandler} />
+          <Box
+            css={{
+              flex: 1,
+              flexDirection: "row",
+              width: "50%",
+            }}
+          >
+            <Image size={"sm"} src={logo} />
+          </Box>
+          <Box
+            css={{
+              flex: 1,
+              flexDirection: "row",
+              display: "inherit",
+              justifyContent: "end",
+              width: "50%",
+              "@bp0": {
+                display: "none",
+              },
+
+              "@bp1": {
+                color: "blue",
+              },
+            }}
+          >
+            <Text color={"white"} align={"center"}>
+              <Link to="/"> HOME</Link>
+            </Text>
+            <Text color={"white"} align={"center"}>
+              <Link to="/about">ABOUT</Link>
+            </Text>
+            <Text color={"white"} align={"center"}>
+              |
+            </Text>
+            <Text color={"white"} align={"center"}>
+              LOGIN
+            </Text>
+            <Button style={"basestyle"}>REGISTER</Button>
+          </Box>
+        </Navbar>
+
+        {/* Drawer Menu */}
+        {sideDrawer}
       </Box>
-      {/* //Footer */}
-      {/* <Box
-        postion={"right"}
-        css={{
-          bg: "black",
-        }}
-      >
-        <Text>Hellow World</Text>
-        <Image
-          src={logo}
-          css={{
-            left: "200px",
-            top: "60px",
-          }}
-        />
-      </Box> */}
     </>
   );
 };

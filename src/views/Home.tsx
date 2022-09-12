@@ -7,6 +7,7 @@ import { Image } from "../components/Image";
 import logo from "../assets/logo.png";
 import pic1 from "../assets/1.png";
 import pic2 from "../assets/2.png";
+import pic3 from "../assets/Rectangle 307.png";
 import SideDrawer from "../components/sideDrawer/sideDrawer";
 import DrawerToggleButton from "../components/sideDrawer/DrawerToggleButton";
 import { styled } from "../theming/darkTheme";
@@ -83,7 +84,6 @@ const Home = () => {
             </Text>
 
             <Image src={pic1} size={"medium"} />
-            <Image src={pic2} size={"large"} />
           </Box>
         </Box>
         {/* 2nd row input box */}
@@ -195,7 +195,9 @@ const Home = () => {
             width: "100%",
           }}
         >
-          <Box postion={"center"}>Helllwp Worlds</Box>
+          <Box postion={"center"}>
+            <Image src={pic3} />
+          </Box>
         </Box>
       </Box>
     </>

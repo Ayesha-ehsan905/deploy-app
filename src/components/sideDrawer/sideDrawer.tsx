@@ -13,50 +13,84 @@ const SideDrawer = (props) => {
     <>
       <Box>
         <Navbar navbar_Style={"mobile_navebar"}>
-          <Text
-            color={"white"}
-            align={"left"}
+          {/* child div */}
+          <Box
             css={{
-              marginTop: "30px",
-              fontSize: "22px",
-              marginLeft: "12px",
-              cursor: "pointer",
+              mt: "40px",
+              ml: "20px",
             }}
-            onClick={props.drawer}
           >
-            X
-          </Text>
-          <Image size={"sm"} src={logo}></Image>
+            <Text
+              color={"white"}
+              css={{
+                fontSize: "24px",
+                display: "inline",
+                mr: "30px",
 
-          <Span SideDrawer={"line"} />
-          <Box postion={"left"}>
-            <Text align={"left"} color={"white"}>
+                cursor: "pointer",
+              }}
+              onClick={props.drawer}
+            >
+              X
+            </Text>
+            <Image
+              size={"sm"}
+              src={logo}
+              css={{ mt: "0px", ml: "0px" }}
+            ></Image>
+          </Box>
+          <Span
+            SideDrawer={"line"}
+            css={{
+              mt: "50px",
+            }}
+          />
+          <Box postion={"center"}>
+            <Text
+              color={"white"}
+              css={{
+                mt: "50px",
+                ml: "20px",
+              }}
+            >
               HOME
             </Text>
           </Box>
-          <Span SideDrawer={"line"} css={{ marginTop: "40px" }} />
-          <Span SideDrawer={"line"} css={{ marginTop: "65px" }} />
-          <Box postion={"left"} css={{ marginTop: "65px" }}>
-            <Text align={"left"} color={"white"}>
+          <Span SideDrawer={"line"} css={{ mt: "0px" }} />
+
+          <Span SideDrawer={"line"} css={{ marginTop: "35px" }} />
+          <Box postion={"center"}>
+            <Text
+              color={"white"}
+              css={{
+                mt: "35px",
+                ml: "20px",
+                // m: "-20px",
+              }}
+            >
               ABOUT
             </Text>
           </Box>
 
-          <Span SideDrawer={"line"} css={{ marginTop: "105px" }} />
-          <Span SideDrawer={"line"} css={{ marginTop: "135px" }} />
+          <Span SideDrawer={"line"} css={{ marginTop: "0px" }} />
+          <Span SideDrawer={"line"} css={{ marginTop: "25px" }} />
           <Box
-            postion={"left"}
-            css={{ backgroundImage: "none", marginTop: "135px" }}
+            postion={"center"}
+            css={{
+              backgroundImage: "none",
+              marginTop: "55px",
+              flex: 1,
+              ml: "20px",
+            }}
           >
-            <Text align={"left"} color={"white"}>
-              LOGIN
-            </Text>
+            <Text color={"white"}>LOGIN</Text>
           </Box>
 
           <Button
             style={"basestyle"}
             css={{
-              marginTop: "285px",
+              mr: "0px",
+              mt: "45px",
             }}
           >
             REGISTER

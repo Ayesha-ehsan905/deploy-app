@@ -20,17 +20,11 @@ export const Text = styled("p", {
       center: {
         mt: "31px",
         ml: "40px",
-        "@bp2": {
-          ft: "13px",
-          ml: "10px",
-        },
+
         "@bp3": {
           ft: "14px",
           ml: "20px",
         },
-      },
-      left: {
-        ml: "20px",
       },
     },
     color: {

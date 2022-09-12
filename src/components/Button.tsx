@@ -12,7 +12,7 @@ export const Button = styled("button", {
       basestyle: {
         width: "163px",
         height: "40px",
-        ml: "30px",
+        ml: "20px",
         mr: "30px",
         mt: "20px",
         "&:hover": {

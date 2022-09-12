@@ -5,17 +5,12 @@ export const Image = styled("img", {
   variants: {
     size: {
       sm: {
-        left: "30px",
-        top: "23px",
         ml: "20px",
+        my: "20px",
         "@bp0": {
           // display: "none",
-          mt: "0px",
-          ml: "70px",
-        },
-        "@bp2": {
-          width: "150px",
-          top: "30px",
+          mt: "20px",
+          ml: "60px",
         },
       },
       medium: {
@@ -76,6 +71,10 @@ export const Image = styled("img", {
           right: "25px",
           left: "0px",
         },
+      },
+      xl: {
+        // mt:'15px',
+        // ml:
       },
     },
   },

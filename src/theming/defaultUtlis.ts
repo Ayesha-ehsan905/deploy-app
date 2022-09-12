@@ -70,6 +70,12 @@ const defaultUtlis = {
   justifyContent: (value: unknown) => ({
     justifyContent: value,
   }),
+  // flex: (value: unknown) => ({
+  //   flex: value,
+  // }),
+  // flexDirection: (value: unknown) => ({
+  //   flexDirection: value,
+  // }),
 };
 
 export default defaultUtlis;
