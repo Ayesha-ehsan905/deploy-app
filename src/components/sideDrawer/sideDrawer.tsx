@@ -45,7 +45,7 @@ const SideDrawer = (props) => {
               mt: "50px",
             }}
           />
-          <Box postion={"center"}>
+          <Box style={"round"}>
             <Text
               color={"white"}
               css={{
@@ -59,7 +59,7 @@ const SideDrawer = (props) => {
           <Span SideDrawer={"line"} css={{ mt: "0px" }} />
 
           <Span SideDrawer={"line"} css={{ marginTop: "35px" }} />
-          <Box postion={"center"}>
+          <Box style={"round"}>
             <Text
               color={"white"}
               css={{
@@ -75,7 +75,7 @@ const SideDrawer = (props) => {
           <Span SideDrawer={"line"} css={{ marginTop: "0px" }} />
           <Span SideDrawer={"line"} css={{ marginTop: "25px" }} />
           <Box
-            postion={"center"}
+            style={"round"}
             css={{
               backgroundImage: "none",
               marginTop: "55px",
@@ -91,6 +91,7 @@ const SideDrawer = (props) => {
             css={{
               mr: "0px",
               mt: "45px",
+              mb: "40px",
             }}
           >
             REGISTER

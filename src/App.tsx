@@ -10,14 +10,13 @@ import {
   Link,
   useNavigate,
 } from "react-router-dom";
-import NAVBAR from "./views/NAVBAR";
 
 const App: React.FC = () => {
   return (
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<NAVBAR />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route element={<Error />} />
         </Routes>

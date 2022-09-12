@@ -12,9 +12,6 @@ export const Text = styled("p", {
       sans: {
         fontFamily: "$sans",
       },
-      inter: {
-        fontFamily: "$Inter",
-      },
     },
     align: {
       center: {

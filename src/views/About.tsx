@@ -3,7 +3,7 @@ import { Box } from "../components/Box";
 import React from "react";
 const About = () => {
   return (
-    <Box style={{ textAlign: "center", color: "white" }}>
+    <Box css={{ textAlign: "center", color: "white" }}>
       <Text> Welcome to The About us Page</Text>
     </Box>
   );

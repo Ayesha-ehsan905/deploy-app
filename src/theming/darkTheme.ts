@@ -54,6 +54,9 @@ const injectGlobalStyles = darktheme.globalCss({
     textDecoration: "none",
     color: "$white",
   },
+  p: {
+    fontFamily: "Inter",
+  },
 });
 
 injectGlobalStyles();
