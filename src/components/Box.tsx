@@ -23,7 +23,7 @@ export const Box = styled("div", {
         boxShadow: "0px 4px 24px -1px rgba(0, 0, 0, 0.2)",
         backdropFilter: "blur(50px)",
         br: "12px",
-        height: "280px",
+        // height: "280px",
       },
     },
   },

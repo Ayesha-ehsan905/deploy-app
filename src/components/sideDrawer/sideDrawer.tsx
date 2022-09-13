@@ -18,6 +18,7 @@ const SideDrawer = (props) => {
             css={{
               mt: "40px",
               ml: "20px",
+              dislpay: "flex",
             }}
           >
             <Text

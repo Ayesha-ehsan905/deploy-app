@@ -10,6 +10,9 @@ export const Image = styled("img", {
           // display: "none",
           mt: "20px",
           ml: "60px",
+          mb: "0px",
+          width: "35%",
+          height: "31px",
         },
       },
       medium: {

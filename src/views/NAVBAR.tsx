@@ -42,12 +42,24 @@ const NAVBAR = () => {
           <DrawerToggleButton drawerClickHandler={drawerTogglerClickHandler} />
           <Box
             css={{
-              flex: 1,
+              // flex: 1,
+              display: "flex",
               flexDirection: "row",
               width: "50%",
             }}
           >
-            <Image size={"sm"} src={logo} />
+            <Image
+              size={"sm"}
+              src={logo}
+              css={{
+                "@bp0": {
+                  // display: "none",
+                  mt: "20px",
+                  ml: "60px",
+                  mb: "0px",
+                },
+              }}
+            />
           </Box>
           <Box
             css={{

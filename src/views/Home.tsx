@@ -198,12 +198,41 @@ const Home = () => {
       </Box>
       {/* 4th row parent div end here */}
 
+      {/* dotted line */}
+      <Box
+        css={{
+          width: "29%",
+          position: "absolute",
+          left: "19%",
+          mt: "20px",
+          border: "2px dashed #828282",
+          "@bp0": {
+            display: "none",
+          },
+        }}
+      ></Box>
+
+      <Box
+        css={{
+          width: "29%",
+          position: "absolute",
+          left: "52%",
+          mt: "20px",
+          border: "2px dashed #828282",
+          "@bp0": {
+            display: "none",
+          },
+        }}
+      ></Box>
       {/* //5th row parent div  */}
       <Box
         css={{
           width: "100%",
           display: "flex",
           flexDirection: "row",
+
+          justifyContent: "space-between",
+          alignItems: "center",
 
           "@bp0": {
             flexDirection: "column",
@@ -216,8 +245,14 @@ const Home = () => {
           as="div"
           css={{
             display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+
             width: "100%",
             flexDirection: "column",
+            "@bp0": {
+              mt: "30px",
+            },
           }}
         >
           {/* //child Circle */}
@@ -230,7 +265,9 @@ const Home = () => {
               br: "50%",
               height: "50px",
               width: "10%",
-              ml: "200px",
+              "@bp0": {
+                width: "7%",
+              },
             }}
           >
             <Text
@@ -250,7 +287,6 @@ const Home = () => {
               border: "1px solid #828282",
               transform: " rotate(-90deg)",
               width: "40px",
-              ml: "200px",
               mt: "20px",
             }}
           ></Box>
@@ -258,13 +294,13 @@ const Home = () => {
           <Box
             style={"rounded"}
             css={{
-              width: "90%",
+              // width: "90%",
               ml: "30px",
               mr: "30px",
               "@bp0": {
                 ml: "30px",
                 width: "90%",
-                mt: "30px",
+                mt: "20px",
               },
             }}
           >
@@ -318,19 +354,26 @@ const Home = () => {
             >
               Integrate
             </Text>
-            <Text color={"muted"} css={{ ft: "16px", ml: "30px" }}>
+            <Text color={"muted"} css={{ ft: "16px", ml: "30px", mr: "20px" }}>
               Active threat sharing with your coverage means your insurance is
               one unified solution.
             </Text>
           </Box>
         </Box>
+
         {/* 2nd child */}
         <Box
           as="div"
           css={{
             display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+
             width: "100%",
             flexDirection: "column",
+            "@bp0": {
+              mt: "30px",
+            },
           }}
         >
           {/* //child Circle */}
@@ -343,7 +386,9 @@ const Home = () => {
               br: "50%",
               height: "50px",
               width: "10%",
-              ml: "200px",
+              "@bp0": {
+                width: "7%",
+              },
             }}
           >
             <Text
@@ -363,7 +408,6 @@ const Home = () => {
               border: "1px solid #828282",
               transform: " rotate(-90deg)",
               width: "40px",
-              ml: "200px",
               mt: "20px",
             }}
           ></Box>
@@ -372,13 +416,14 @@ const Home = () => {
           <Box
             style={"rounded"}
             css={{
-              width: "90%",
+              // width: "90%",
               ml: "30px",
               mr: "30px",
+              // pb: "25px",
               "@bp0": {
                 ml: "30px",
                 width: "90%",
-                mt: "30px",
+                mt: "20px",
               },
             }}
           >
@@ -440,7 +485,7 @@ const Home = () => {
             >
               Validate
             </Text>
-            <Text color={"muted"} css={{ ft: "16px", ml: "30px" }}>
+            <Text color={"muted"} css={{ ft: "16px", ml: "30px", mr: "20px" }}>
               AI powered claims approvals let your teams know exactly where they
               stand, instantly
             </Text>
@@ -451,8 +496,14 @@ const Home = () => {
           as="div"
           css={{
             display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+
             width: "100%",
             flexDirection: "column",
+            "@bp0": {
+              mt: "30px",
+            },
           }}
         >
           {/* //child Circle */}
@@ -465,7 +516,9 @@ const Home = () => {
               br: "50%",
               height: "50px",
               width: "10%",
-              ml: "200px",
+              "@bp0": {
+                width: "7%",
+              },
             }}
           >
             <Text
@@ -485,7 +538,7 @@ const Home = () => {
               border: "1px solid #828282",
               transform: " rotate(-90deg)",
               width: "40px",
-              ml: "200px",
+
               mt: "20px",
             }}
           ></Box>
@@ -493,13 +546,13 @@ const Home = () => {
           <Box
             style={"rounded"}
             css={{
-              width: "90%",
+              // width: "90%",
               ml: "30px",
               mr: "30px",
               "@bp0": {
                 ml: "30px",
                 width: "90%",
-                mt: "30px",
+                mt: "20px",
               },
             }}
           >
@@ -561,7 +614,7 @@ const Home = () => {
             >
               Remediate
             </Text>
-            <Text color={"muted"} css={{ ft: "16px", ml: "30px" }}>
+            <Text color={"muted"} css={{ ft: "16px", ml: "30px", mr: "20px" }}>
               Tamper proof incident and coverage summary enables IR teams to
               recover faster.
             </Text>
