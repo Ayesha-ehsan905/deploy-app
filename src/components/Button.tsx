@@ -36,6 +36,24 @@ export const Button = styled("button", {
         ml: "px",
         mt: "3px",
       },
+      basetyle_connect: {
+        width: "163px",
+        height: "50px",
+        ml: "20px",
+        mr: "30px",
+        mt: "54px",
+        br: "0px",
+        "&:hover": {
+          backgroundColor: "$white",
+          border: " solid $bg_dark",
+        },
+        "@bp0": {
+          ml: "40px",
+          mr: "40px",
+          width: "80%",
+          mt: "10px",
+        },
+      },
     },
   },
 });

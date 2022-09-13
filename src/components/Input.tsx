@@ -28,6 +28,32 @@ export const Input = styled("input", {
           color: "white",
         },
       },
+      md: {
+        // linearGradient:
+        //   "153.32deg, rgba(255, 255, 255, 0.3) -65.62%, rgba(255, 255, 255, 0.1) 83.28%",
+
+        // backdropFilter: "blur(20px)",
+        backgroundColor: "#27293a",
+        width: "30%",
+        padding: "7px 15px",
+        height: "56px",
+        border: "1px solid #FFF",
+        borderRadius: "4px",
+        ft: "18px",
+        lineHeight: "24px",
+        color: "white",
+        mt: "50px",
+        fontFamily: "Inter",
+
+        "&::placeholder": {
+          color: "white",
+        },
+        "@bp0": {
+          width: "80%",
+          ml: "40px",
+          mr: "40px",
+        },
+      },
     },
   },
 });

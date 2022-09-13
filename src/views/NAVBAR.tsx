@@ -5,16 +5,11 @@ import { Box } from "../components/Box";
 import { Button } from "../components/Button";
 import { Image } from "../components/Image";
 import logo from "../assets/logo.png";
-import pic1 from "../assets/1.png";
-import pic2 from "../assets/2.png";
 import SideDrawer from "../components/sideDrawer/sideDrawer";
 import DrawerToggleButton from "../components/sideDrawer/DrawerToggleButton";
-import { styled } from "../theming/darkTheme";
-import { Input } from "../components/Input";
-import { BiSearchAlt2 } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
-const NAVBAR = () => {
+const navBar = () => {
   const [sideDrawerOpen, setsideDrawer] = useState<boolean>(false);
 
   const drawerTogglerClickHandler = () => {
@@ -100,4 +95,4 @@ const NAVBAR = () => {
   );
 };
 
-export default NAVBAR;
+export default navBar;

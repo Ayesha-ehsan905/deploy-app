@@ -1,15 +1,7 @@
-import { useState } from "react";
-import { Button } from "./components/Button";
-import Home from "./views/Home";
+import Home from "./views/Home/index";
 import About from "./views/About";
 import Error from "./views/Error";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  useNavigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App: React.FC = () => {
   return (

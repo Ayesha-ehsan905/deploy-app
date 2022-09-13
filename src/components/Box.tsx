@@ -18,12 +18,10 @@ export const Box = styled("div", {
         boxSizing: "border-box",
         linearGradient:
           "153.32deg, rgba(255, 255, 255, 0.3) -65.62%, rgba(255, 255, 255, 0.1) 83.28%",
-        // ml: "30px",
-        // mr: "30px",
-        boxShadow: "0px 4px 24px -1px rgba(0, 0, 0, 0.2)",
+
+        boxShadow: "0px 4px 24px -1px rgba(0, 0, 0, 0.32)",
         backdropFilter: "blur(50px)",
         br: "12px",
-        // height: "280px",
       },
     },
   },

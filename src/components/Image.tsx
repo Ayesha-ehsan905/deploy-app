@@ -38,9 +38,15 @@ export const Image = styled("img", {
           left: "0px",
         },
       },
-      xl: {
-        // mt:'15px',
-        // ml:
+      xs: {
+        width: "43%",
+        ml: "60px",
+        mt: "90px",
+      },
+      xss: {
+        width: "30%",
+        ml: "60px",
+        mt: "30px",
       },
     },
   },
