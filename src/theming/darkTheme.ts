@@ -23,8 +23,9 @@ const darktheme = createStitches({
     },
   },
   media: {
-    bp0: " (max-width:660px)",
-    bp1: "(min-width: 661px) ",
+    bp0: " (max-width:700px)",
+    bp1: "(min-width: 701px) ",
+    // bp1: "(min-width: 661px) ",
     bp2: "",
     bp3: "",
     bp4: "",

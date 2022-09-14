@@ -16,7 +16,7 @@ export const Image = styled("img", {
         },
       },
       medium: {
-        width: "85%",
+        width: "80%",
         height: "270px",
       },
       large: {
@@ -41,7 +41,9 @@ export const Image = styled("img", {
       xs: {
         width: "43%",
         ml: "60px",
-        mt: "90px",
+        "@bp0": {
+          mt: "70px",
+        },
       },
       xss: {
         width: "30%",

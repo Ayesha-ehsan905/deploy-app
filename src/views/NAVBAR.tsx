@@ -66,10 +66,6 @@ const navBar = () => {
               "@bp0": {
                 display: "none",
               },
-
-              "@bp1": {
-                color: "blue",
-              },
             }}
           >
             <Text color={"white"} align={"center"}>

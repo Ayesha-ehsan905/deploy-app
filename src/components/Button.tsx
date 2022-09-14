@@ -35,6 +35,12 @@ export const Button = styled("button", {
         mr: "20px",
         ml: "px",
         mt: "3px",
+        "@bp1": {
+          display: "none",
+        },
+        "@bp0": {
+          ml: "60px",
+        },
       },
       basetyle_connect: {
         width: "163px",

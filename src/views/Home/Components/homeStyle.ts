@@ -1,5 +1,6 @@
 import { Box } from "../../../components/Box";
 import { Text } from "../../../components/Text";
+import { Image } from "../../../components/Image";
 import { styled } from "../../../theming/darkTheme";
 
 const ContentSection = styled(Box, {
@@ -10,7 +11,8 @@ const ContentSection = styled(Box, {
         display: "flex",
         flexDirection: "row",
         width: "100%",
-        ml: "30px",
+        // ml: "30px",
+        ml: "60px",
         "@bp0": {
           flexDirection: "column",
         },
@@ -67,7 +69,7 @@ const HeroSection = styled(Box, {
         display: "flex",
         flexDirection: "row",
         width: "100%",
-        ml: "30px",
+        ml: "60px",
         "@bp0": {
           flexDirection: "column",
         },
@@ -212,10 +214,10 @@ const InfoSectionContent = styled(Box, {
       parent: {
         display: "flex",
         flexDirection: "row",
-        width: "100%",
+        width: "50%",
         flex: "none",
         mt: "20px",
-        ml: "40px",
+        // ml: "40px",
         "@bp0": {
           flexDirection: "column",
           width: "100%",
@@ -223,7 +225,17 @@ const InfoSectionContent = styled(Box, {
       },
       child: {
         flex: "none",
-        height: "220px",
+        display: "flex",
+        flexDirection: "column",
+        width: "87%",
+        ml: "30px",
+        "@bp0": {
+          width: "70%",
+        },
+      },
+      box: {
+        flex: "none",
+        height: "30%",
         boxSizing: "border-box",
         linearGradient:
           "153.32deg, rgba(255, 255, 255, 0.3) -65.62%, rgba(255, 255, 255, 0.1) 83.28%",
@@ -231,17 +243,17 @@ const InfoSectionContent = styled(Box, {
         boxShadow: "0px 4px 24px -1px rgba(0, 0, 0, 0.32)",
         backdropFilter: "blur(50px)",
         br: "12px",
-        width: "40%",
         ml: "40px",
         mr: "40px",
+        mt: "30px",
+        display: "flex",
+        flexDirection: "row",
+        width: "100%",
         "@bp0": {
-          // flexDirection: "column",
-          width: "70%",
-          mt: "30px",
-          mr: "30px",
-          height: "210px",
+          flexDirection: "Column",
         },
       },
+      content: {},
     },
   },
 });
@@ -260,10 +272,15 @@ const ConnectSection = styled(Box, {
         backdropFilter: "blur(50px)",
         br: "12px",
         mt: "50px",
-        height: "400px",
-        mb: "100px",
+        height: "55%",
+        pb: "5%",
+        mb: "10%",
         "@bp0": {
-          height: "580px",
+          height: "50%",
+          width: "80%",
+          mr: "40px",
+          pb: "10%",
+          mb: "50%",
         },
       },
     },
@@ -279,12 +296,20 @@ const InfoText = styled(Text, {
         fontWeight: "$Bold",
         color: "$white",
         mr: "20px",
+        "@bp0": {
+          mr: "20px",
+          ml: "20px",
+        },
       },
       p: {
         ft: "80%",
         color: "$muted",
         lineHeight: "18px",
         // fontfamily: "$Inter",
+        "@bp0": {
+          mr: "20px",
+          ml: "20px",
+        },
       },
       sm: {
         textAlign: "center",
@@ -314,22 +339,49 @@ const InfoText = styled(Text, {
 });
 
 const Footer = styled(Box, {
-  height: "300px",
-  bg: "black",
+  height: "50%",
+
   variants: {
     style: {
       parent: {
+        bg: "black",
         display: "flex",
         flexDirection: "row",
         justifyContent: "center",
+        "@bp0": {
+          flexDirection: "column",
+        },
         // bg: "$bg_dark_div",
       },
       child: {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
+        mt: "2%",
+        mr: "3%",
+        "@bp0": {
+          ml: "30px",
+          flexDirection: "column",
+          width: "75%",
+        },
+      },
+      childs: {
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "center",
+        "@bp0": {
+          ml: "60px",
+        },
       },
     },
+  },
+});
+const ImageSection = styled(Image, {
+  m: "10px",
+  width: "40%",
+  "@bp0": {
+    width: "95%",
+    height: "150px",
   },
 });
 export {
@@ -343,4 +395,5 @@ export {
   ConnectSection,
   InfoText,
   Footer,
+  ImageSection,
 };
