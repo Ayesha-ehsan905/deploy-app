@@ -1,7 +1,7 @@
 import { Input } from "../../../components/Input";
 import Search from "../../../icons/search";
 import { InputSection } from "./homeStyle";
-
+import React from "react";
 export default () => {
   return (
     <>

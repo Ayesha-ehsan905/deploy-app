@@ -3,7 +3,7 @@ import Integrate from "../../../icons/integrate";
 import Remediate from "../../../icons/Remediate";
 import Validate from "../../../icons/validate";
 import { StepSection, StepSectionHeading } from "./homeStyle";
-
+import React from "react";
 export default () => {
   return (
     <>

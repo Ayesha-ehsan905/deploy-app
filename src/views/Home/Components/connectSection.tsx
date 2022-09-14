@@ -3,7 +3,7 @@ import { Button } from "../../../components/Button";
 import { Input } from "../../../components/Input";
 import { Text } from "../../../components/Text";
 import { ConnectSection, InfoText } from "./homeStyle";
-
+import React from "react";
 export default () => {
   return (
     <>

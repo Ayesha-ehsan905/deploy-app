@@ -4,6 +4,7 @@ import { Text } from "../../../components/Text";
 import logo from "../../../assets/logo.png";
 import pic from "../../../assets/warranty.png";
 import { Footer } from "./homeStyle";
+import React from "react";
 export default () => {
   return (
     <>

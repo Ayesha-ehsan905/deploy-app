@@ -2,7 +2,7 @@ import { Box } from "../../../components/Box";
 import { Text } from "../../../components/Text";
 import { Image } from "../../../components/Image";
 import { styled } from "../../../theming/darkTheme";
-
+import React from "react";
 const ContentSection = styled(Box, {
   variants: {
     content: {
@@ -334,6 +334,14 @@ const InfoText = styled(Text, {
         pr: " 23%",
         pt: "1%",
       },
+      lg: {
+        color: "$white",
+        fontFamily: "$sans",
+        lineHeight: "24px",
+        ft: "16px",
+        fontWeight: "$Bold",
+        mt: "0px",
+      },
     },
   },
 });
@@ -384,6 +392,66 @@ const ImageSection = styled(Image, {
     height: "150px",
   },
 });
+const AttackSection = styled(Box, {
+  variants: {
+    style: {
+      parent: {
+        textAlign: "center",
+        ft: "30px",
+        display: "grid",
+        columnGap: "55px",
+        rowGap: "55px",
+        gridTemplateColumns: " 1fr 1fr 1fr",
+        // mr: "60px",
+        ml: "60px",
+        // mt: "80px",
+        // height: "40pc",
+        "@bp0": {
+          gridTemplate: "none",
+          columnGap: "40px",
+          rowGap: "40px",
+        },
+      },
+      child: {
+        linearGradient:
+          "153.32deg, rgba(255, 255, 255, 0.3) -65.62%, rgba(255, 255, 255, 0.1) 83.28%",
+        boxSizing: "border-box",
+        boxShadow: "0px 4px 24px -1px rgba(0, 0, 0, 0.32)",
+        backdropFilter: "blur(50px)",
+        br: "12px",
+        width: "80%",
+        height: "100%",
+      },
+    },
+    Arrow: {
+      line: {
+        content: "",
+        display: "inline-block",
+        height: "40%",
+        position: "absolute",
+        borderLeft: "2px dashed rgb(255, 158, 0)",
+      },
+      lines: {
+        content: "",
+        display: "inline-block",
+        // width: "100%",
+        height: "40%",
+        // zIndex: "1",
+        position: "absolute",
+        borderLeft: "2px dashed rgb(255, 158, 0)",
+        "@bp1": {
+          display: "none",
+        },
+      },
+    },
+    font: {
+      parent: {
+        width: "100%",
+        mt: "80px",
+      },
+    },
+  },
+});
 export {
   ContentSection,
   HeroSection,
@@ -396,4 +464,5 @@ export {
   InfoText,
   Footer,
   ImageSection,
+  AttackSection,
 };

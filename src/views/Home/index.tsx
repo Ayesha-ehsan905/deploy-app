@@ -6,6 +6,8 @@ import StepSection from "./Components/stepSection";
 import InfoSection from "./Components/infoSection";
 import ConnectSection from "./Components/connectSection";
 import Footer from "./Components/footer";
+import AttackSection from "./Components/attackSection";
+import React from "react";
 const Home = () => {
   return (
     <>
@@ -14,6 +16,7 @@ const Home = () => {
       <InputSection />
       <HeroSection />
       <StepSection />
+      <AttackSection />
       <InfoSection />
       <ConnectSection />
       <Footer />

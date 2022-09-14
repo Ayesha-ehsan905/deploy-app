@@ -1,5 +1,6 @@
 import { Image } from "../../../components/Image";
 import { Text } from "../../../components/Text";
+import React from "react";
 import {
   InfoSection,
   InfoSectionContent,

@@ -2,6 +2,7 @@ import { Text } from "../../../components/Text";
 import { Image } from "../../../components/Image";
 import pic1 from "../../../assets/1.png";
 import { ContentSection } from "./homeStyle";
+import React from "react";
 export default () => {
   return (
     <>

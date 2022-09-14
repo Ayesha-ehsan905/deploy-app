@@ -1,7 +1,7 @@
 import { Text } from "../../../components/Text";
 import { Image } from "../../../components/Image";
 import { HeroSection } from "./homeStyle";
-
+import React from "react";
 import pic2 from "../../../assets/2.png";
 export default () => {
   return (

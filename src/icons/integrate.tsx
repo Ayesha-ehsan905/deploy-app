@@ -1,3 +1,4 @@
+import React from "react";
 export interface IconProps {
   width?: string;
   height?: string;
