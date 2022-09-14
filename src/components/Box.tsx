@@ -26,3 +26,9 @@ export const Box = styled("div", {
     },
   },
 });
+
+export const Container = styled("div", {
+  m: "0 auto",
+  width: "90%",
+  maxWidth: "1600px",
+});

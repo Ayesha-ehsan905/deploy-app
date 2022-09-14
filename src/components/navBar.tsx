@@ -11,10 +11,6 @@ export const Navbar = styled("nav", {
         br: "0px 0px 15px 15px",
         display: "flex",
         justifyContent: "end",
-        // mr: "30px",
-        // ml: "30px",
-        mr: "60px",
-        ml: "60px",
       },
 
       mobile_navebar: {

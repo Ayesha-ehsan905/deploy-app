@@ -7,12 +7,10 @@ const ContentSection = styled(Box, {
   variants: {
     content: {
       parent: {
-        mt: "50px",
+        mt: "60px",
         display: "flex",
         flexDirection: "row",
         width: "100%",
-        // ml: "30px",
-        ml: "60px",
         "@bp0": {
           flexDirection: "column",
         },
@@ -44,6 +42,7 @@ const InputSection = styled(Box, {
         width: "100%",
         flex: "none",
         justifyContent: "center",
+        m: "30px auto",
         textAlign: "center",
         "@bp0": {
           textAlign: "left",
@@ -65,11 +64,10 @@ const HeroSection = styled(Box, {
   variants: {
     style: {
       parent: {
-        mt: "60px",
+        m: "60px auto",
         display: "flex",
         flexDirection: "row",
         width: "100%",
-        ml: "60px",
         "@bp0": {
           flexDirection: "column",
         },
@@ -96,23 +94,24 @@ const StepSectionHeading = styled(Box, {
   variants: {
     style: {
       parent: {
+        m: "60px auto",
         width: "100%",
       },
       childlines: {
-        width: "29%",
+        width: "26%",
         position: "absolute",
-        left: "19%",
-        mt: "20px",
+        left: "22%",
+        m: "20px auto",
         border: "1px dashed #828282",
         "@bp0": {
           display: "none",
         },
       },
       childline: {
-        width: "29%",
+        width: "28%",
         position: "absolute",
         left: "52%",
-        mt: "20px",
+        m: "20px auto",
         border: "1px dashed #828282",
         "@bp0": {
           display: "none",
@@ -170,15 +169,13 @@ const StepSection = styled(Box, {
           " 153.32deg, #B79313 -65.62%, rgba(233, 209, 107, 0.1) 83.28%",
         br: "50%",
         height: "50px",
-        width: "10%",
+        width: "50px",
         "@bp0": {
           width: "7%",
         },
       },
       box: {
         width: "70%",
-        ml: "30px",
-        mr: "30px",
         "@bp0": {
           ml: "30px",
           width: "90%",
@@ -188,8 +185,8 @@ const StepSection = styled(Box, {
       icon: {
         width: "50px",
         height: "50px",
-        ml: "30px",
-        mt: "20px",
+        p: "5px",
+        m: "20px",
         br: "6px",
         linearGradient:
           "153.32deg, rgba(255, 255, 255, 0.3) -65.62%, rgba(255, 255, 255, 0.1) 83.28%",

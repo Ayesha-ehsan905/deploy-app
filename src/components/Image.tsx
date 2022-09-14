@@ -17,7 +17,6 @@ export const Image = styled("img", {
       },
       medium: {
         width: "80%",
-        height: "270px",
       },
       large: {
         width: "430px",
