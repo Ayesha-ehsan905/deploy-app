@@ -2,7 +2,8 @@ import { Box } from "../../../components/Box";
 import { Text } from "../../../components/Text";
 import { Image } from "../../../components/Image";
 import { styled } from "../../../theming/darkTheme";
-import React from "react";
+import line from "../../../assets/lineUp.png";
+import line1 from "../../../assets/lineDown.png";
 const ContentSection = styled(Box, {
   variants: {
     content: {
@@ -38,12 +39,16 @@ const InputSection = styled(Box, {
   variants: {
     style: {
       parent: {
-        display: "flex",
-        width: "100%",
+        // display: "flex",
+        width: "50%",
         flex: "none",
         justifyContent: "center",
         m: "30px auto",
         textAlign: "center",
+        backgroundColor: "white",
+        height: "71px",
+        br: "12px",
+        bg: "rgba(255, 255, 255, 0.1)",
         "@bp0": {
           textAlign: "left",
           ml: "30px",
@@ -98,20 +103,20 @@ const StepSectionHeading = styled(Box, {
         width: "100%",
       },
       childlines: {
-        width: "26%",
+        width: "23%",
         position: "absolute",
-        left: "22%",
-        m: "20px auto",
+        left: "23%",
+        m: "23px auto",
         border: "1px dashed #828282",
         "@bp0": {
           display: "none",
         },
       },
       childline: {
-        width: "28%",
+        width: "23%",
         position: "absolute",
-        left: "52%",
-        m: "20px auto",
+        left: "53%",
+        m: "22px auto",
         border: "1px dashed #828282",
         "@bp0": {
           display: "none",
@@ -186,7 +191,7 @@ const StepSection = styled(Box, {
         width: "50px",
         height: "50px",
         p: "5px",
-        m: "20px",
+        m: "30px",
         br: "6px",
         linearGradient:
           "153.32deg, rgba(255, 255, 255, 0.3) -65.62%, rgba(255, 255, 255, 0.1) 83.28%",
@@ -211,10 +216,8 @@ const InfoSectionContent = styled(Box, {
       parent: {
         display: "flex",
         flexDirection: "row",
-        width: "50%",
-        flex: "none",
-        mt: "20px",
-        // ml: "40px",
+        width: "90%",
+        justifyContent: "space-between",
         "@bp0": {
           flexDirection: "column",
           width: "100%",
@@ -224,15 +227,14 @@ const InfoSectionContent = styled(Box, {
         flex: "none",
         display: "flex",
         flexDirection: "column",
-        width: "87%",
-        ml: "30px",
+        width: "50%",
+        mr: "30px",
+        justifyContent: "space-between",
         "@bp0": {
-          width: "70%",
+          width: "80%",
         },
       },
       box: {
-        flex: "none",
-        height: "30%",
         boxSizing: "border-box",
         linearGradient:
           "153.32deg, rgba(255, 255, 255, 0.3) -65.62%, rgba(255, 255, 255, 0.1) 83.28%",
@@ -240,8 +242,6 @@ const InfoSectionContent = styled(Box, {
         boxShadow: "0px 4px 24px -1px rgba(0, 0, 0, 0.32)",
         backdropFilter: "blur(50px)",
         br: "12px",
-        ml: "40px",
-        mr: "40px",
         mt: "30px",
         display: "flex",
         flexDirection: "row",
@@ -250,8 +250,15 @@ const InfoSectionContent = styled(Box, {
           flexDirection: "Column",
         },
       },
-      content: {},
     },
+  },
+  ".imageflex": {
+    flex: "1",
+  },
+  ".contentflex": {
+    flex: "2",
+    display: "flex",
+    flexDirection: "column",
   },
 });
 
@@ -268,8 +275,7 @@ const ConnectSection = styled(Box, {
         boxShadow: "0px 4px 24px -1px rgba(0, 0, 0, 0.32)",
         backdropFilter: "blur(50px)",
         br: "12px",
-        mt: "50px",
-        height: "55%",
+        m: "60px auto",
         pb: "5%",
         mb: "10%",
         "@bp0": {
@@ -288,7 +294,7 @@ const InfoText = styled(Text, {
     fonts: {
       h1: {
         // fontFamily: "$sans",
-        ft: "100%",
+        ft: "18px",
         lineHeight: "27px",
         fontWeight: "$Bold",
         color: "$white",
@@ -299,7 +305,7 @@ const InfoText = styled(Text, {
         },
       },
       p: {
-        ft: "80%",
+        ft: "16px",
         color: "$muted",
         lineHeight: "18px",
         // fontfamily: "$Inter",
@@ -344,11 +350,10 @@ const InfoText = styled(Text, {
 });
 
 const Footer = styled(Box, {
-  height: "50%",
-
   variants: {
     style: {
       parent: {
+        paddingTop: "80px",
         bg: "black",
         display: "flex",
         flexDirection: "row",
@@ -362,15 +367,16 @@ const Footer = styled(Box, {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        mt: "2%",
-        mr: "3%",
+
         "@bp0": {
           ml: "30px",
           flexDirection: "column",
           width: "75%",
         },
       },
+
       childs: {
+        alignItems: "start",
         display: "flex",
         flexDirection: "row",
         justifyContent: "center",
@@ -383,10 +389,9 @@ const Footer = styled(Box, {
 });
 const ImageSection = styled(Image, {
   m: "10px",
-  width: "40%",
+  // width: "40%",
   "@bp0": {
     width: "95%",
-    height: "150px",
   },
 });
 const AttackSection = styled(Box, {
@@ -396,17 +401,15 @@ const AttackSection = styled(Box, {
         textAlign: "center",
         ft: "30px",
         display: "grid",
-        columnGap: "55px",
-        rowGap: "55px",
+        columnGap: "60px",
+        rowGap: "60px",
         gridTemplateColumns: " 1fr 1fr 1fr",
-        // mr: "60px",
+
         ml: "60px",
-        // mt: "80px",
-        // height: "40pc",
         "@bp0": {
           gridTemplate: "none",
-          columnGap: "40px",
-          rowGap: "40px",
+          columnGap: "60px",
+          rowGap: "60px",
         },
       },
       child: {
@@ -420,32 +423,57 @@ const AttackSection = styled(Box, {
         height: "100%",
       },
     },
-    Arrow: {
-      line: {
-        content: "",
-        display: "inline-block",
-        height: "40%",
-        position: "absolute",
-        borderLeft: "2px dashed rgb(255, 158, 0)",
-      },
-      lines: {
-        content: "",
-        display: "inline-block",
-        // width: "100%",
-        height: "40%",
-        // zIndex: "1",
-        position: "absolute",
-        borderLeft: "2px dashed rgb(255, 158, 0)",
-        "@bp1": {
-          display: "none",
-        },
-      },
-    },
+
     font: {
       parent: {
         width: "100%",
         mt: "80px",
       },
+    },
+  },
+
+  ".arrow_Style": {
+    position: "absolute",
+    display: "inline",
+  },
+  ".arrow_Styles": {
+    position: "absolute",
+    display: "inline",
+    "@bp1": {
+      display: "none",
+    },
+  },
+  ".gap_display": {
+    "@bp0": {
+      display: "none",
+    },
+  },
+  ".teams_style": {
+    linearGradient:
+      "153.32deg, rgba(255, 255, 255, 0.3) -65.62%, rgba(255, 255, 255, 0.1) 83.28%",
+    boxSizing: "border-box",
+    boxShadow: "0px 4px 24px -1px rgba(0, 0, 0, 0.32)",
+    backdropFilter: "blur(50px)",
+    br: "12px",
+    width: "80%",
+    height: "100%",
+    "&::before": {
+      backgroundImage: `url(${line})`,
+      content: "",
+      position: "absolute",
+      width: "396px",
+      top: "-225px",
+      height: "187px",
+    },
+    "&:after": {
+      content: "",
+      backgroundImage: `url(${line1})`,
+
+      position: "absolute",
+      width: "415px",
+      top: "140px",
+      height: "230px",
+      right: "95px",
     },
   },
 });

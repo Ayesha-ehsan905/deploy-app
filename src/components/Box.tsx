@@ -1,4 +1,3 @@
-import React from "react";
 import { styled } from "../theming/darkTheme";
 
 export const Box = styled("div", {

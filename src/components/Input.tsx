@@ -13,7 +13,7 @@ export const Input = styled("input", {
         backdropFilter: "blur(20px)",
         linearGradient:
           " 90.18deg, rgba(50, 56, 91, 0.57) 0%, rgba(26, 31, 65, 0.57) 100%",
-        width: "50%",
+        width: "98%",
         padding: "7px 15px",
         height: "56px",
         border: "1px solid #FFF",
@@ -21,7 +21,7 @@ export const Input = styled("input", {
         ft: "18px",
         lineHeight: "24px",
         color: "white",
-        mt: "50px",
+        mt: "5px",
         fontFamily: "Inter",
 
         "&::placeholder": {

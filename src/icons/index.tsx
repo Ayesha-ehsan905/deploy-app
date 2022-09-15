@@ -9,3 +9,4 @@ export { default as RemediateIcon } from "./Remediate";
 export { default as SearchIcon } from "./search";
 export { default as TeamIcon } from "./teams";
 export { default as ValidateIcon } from "./validate";
+export { default as ArrowIcon } from "./arrow";

@@ -7,7 +7,7 @@ const defaultTokens = {
     sans: "Space Grotesk",
     inter: "Inter",
     mono: "Menlo, Monaco, 'Lucida Console', 'Courier New', monospace;",
-    LexendDeca: "LexendDeca",
+    LexendDeca: "Lexend Deca",
   },
   fontSizes: {
     1: "13px",

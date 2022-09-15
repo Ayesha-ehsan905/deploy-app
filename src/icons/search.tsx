@@ -16,9 +16,9 @@ export default (props: IconProps) => (
     strokeLinecap="round"
     strokeLinejoin="round"
     style={{
-      position: "relative",
-      right: "80px",
-      top: "5px",
+      position: "absolute",
+      marginLeft: "-6%",
+      marginTop: "20px",
       color: "white",
     }}
     {...props}

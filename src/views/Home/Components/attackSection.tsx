@@ -1,5 +1,4 @@
-import React from "react";
-import { Container } from "../../../components/Box";
+import { Container, Box } from "../../../components/Box";
 import { Text } from "../../../components/Text";
 import {
   AlertIcon,
@@ -9,6 +8,7 @@ import {
   NormalIcon,
   TeamIcon,
   OfficeIcon,
+  ArrowIcon,
 } from "../../../icons/index";
 import { AttackSection, InfoText } from "./homeStyle";
 
@@ -24,7 +24,9 @@ export default () => {
             css={{
               textAlign: "center",
               ft: "32px",
-              mb: "90px",
+              // mb: "90px",
+              m: "60px auto",
+              mb: "100px",
             }}
           >
             Ready for the Next Global Attack?
@@ -35,45 +37,49 @@ export default () => {
           <AttackSection style={"child"}>
             <OfficeIcon />
             <InfoText fonts={"lg"}>Office</InfoText>
-            <AttackSection Arrow={"line"} />
+            <AttackSection className="arrow_Style">
+              <ArrowIcon />
+            </AttackSection>
           </AttackSection>
-          <AttackSection></AttackSection>
+          <AttackSection className="gap_display"></AttackSection>
           <AttackSection style={"child"}>
             <AlertIcon />
             <InfoText fonts={"lg"}>DLT Alert Validation</InfoText>
-            <AttackSection Arrow={"line"} />
+
+            <AttackSection className="arrow_Style">
+              <ArrowIcon />
+            </AttackSection>
           </AttackSection>
           <AttackSection style={"child"}>
             <AttackIcon />
             <InfoText fonts={"lg"}>Phishing Attack</InfoText>
-            <AttackSection
-              Arrow={"line"}
-              css={{
-                "@bp2": {
-                  mt: "30px",
-                },
-                "@bp0": {
-                  mt: "0px",
-                },
-              }}
-            />
+            <AttackSection className="arrow_Style">
+              <ArrowIcon />
+            </AttackSection>
           </AttackSection>
-          <AttackSection style={"child"}>
+          <AttackSection className="teams_style">
             <TeamIcon />
             <InfoText fonts={"lg"}>Paniked Team</InfoText>
-            <AttackSection Arrow={"lines"} />
+            {/* <AttackSection className="image">Hello</AttackSection> */}
+            <AttackSection className="arrow_Styles">
+              <ArrowIcon />
+            </AttackSection>
           </AttackSection>
           <AttackSection style={"child"}>
             <IncidentIcon />
             <InfoText fonts={"lg"}>IR Team/ Incident Report</InfoText>
-            <AttackSection Arrow={"line"} />
+            <AttackSection className="arrow_Style">
+              <ArrowIcon />
+            </AttackSection>
           </AttackSection>
           <AttackSection style={"child"}>
             <LockIcon />
             <InfoText fonts={"lg"}>Ransomware Lockout</InfoText>
-            <AttackSection Arrow={"lines"} />
+            <AttackSection className="arrow_Styles">
+              <ArrowIcon />
+            </AttackSection>
           </AttackSection>
-          <AttackSection></AttackSection>
+          <AttackSection className="gap_display"></AttackSection>
           <AttackSection style={"child"}>
             <NormalIcon />
             <InfoText fonts={"lg"}>Back to Normal</InfoText>
