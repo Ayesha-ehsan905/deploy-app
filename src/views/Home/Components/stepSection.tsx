@@ -53,13 +53,24 @@ export default () => {
               <Text
                 color={"white"}
                 as="h1"
-                css={{ ft: "24px", ml: "30px", fonts: "$LexendDeca" }}
+                css={{
+                  ft: "24px",
+                  ml: "30px",
+                  fonts: "$LexendDeca",
+                  fontWeight: "$Bold",
+                }}
               >
                 Integrate
               </Text>
               <Text
                 color={"muted"}
-                css={{ ft: "16px", ml: "30px", mr: "20px", fonts: "$inter" }}
+                css={{
+                  ft: "16px",
+                  ml: "30px",
+                  mr: "20px",
+                  fonts: "$inter",
+                  fontWeight: "normal",
+                }}
               >
                 Active threat sharing with your coverage means your insurance is
                 one unified solution.
@@ -90,13 +101,24 @@ export default () => {
               <Text
                 color={"white"}
                 as="h1"
-                css={{ ft: "24px", ml: "30px", fonts: "$LexendDeca" }}
+                css={{
+                  ft: "24px",
+                  ml: "30px",
+                  fonts: "$LexendDeca",
+                  fontWeight: "$Bold",
+                }}
               >
                 Validate
               </Text>
               <Text
                 color={"muted"}
-                css={{ ft: "16px", ml: "30px", mr: "20px", fonts: "$inter" }}
+                css={{
+                  ft: "16px",
+                  ml: "30px",
+                  mr: "20px",
+                  fonts: "$inter",
+                  fontWeight: "normal",
+                }}
               >
                 AI powered claims approvals let your teams know exactly where
                 they stand, instantly
@@ -126,13 +148,24 @@ export default () => {
                 fonts={"sans"}
                 color={"white"}
                 as="h1"
-                css={{ ft: "24px", ml: "30px", fonts: "$LexendDeca" }}
+                css={{
+                  ft: "24px",
+                  ml: "30px",
+                  fonts: "$LexendDeca",
+                  fontWeight: "$Bold",
+                }}
               >
                 Remediate
               </Text>
               <Text
                 color={"muted"}
-                css={{ ft: "16px", ml: "30px", mr: "20px", fonts: "$inter" }}
+                css={{
+                  ft: "16px",
+                  ml: "30px",
+                  mr: "20px",
+                  fonts: "$inter",
+                  fontWeight: "normal",
+                }}
               >
                 Tamper proof incident and coverage summary enables IR teams to
                 recover faster.
