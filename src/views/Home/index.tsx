@@ -10,13 +10,13 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      {/* <ContentSection />
+      <ContentSection />
       <InputSection />
       <HeroSection />
       <StepSection />
-      <AttackSection /> */}
+      <AttackSection />
       <InfoSection />
-      {/* <ConnectSection /> */}
+      <ConnectSection />
     </>
   );
 };
