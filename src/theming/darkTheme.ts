@@ -9,6 +9,9 @@ const darktheme = createStitches({
     colors: {
       ...commonTheme.theme.colors,
     },
+    fontFamily: {
+      ...commonTheme.theme.fonts,
+    },
     fontSizes: {
       ...commonTheme.theme.fontSizes,
     },

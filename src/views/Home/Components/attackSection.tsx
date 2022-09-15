@@ -18,7 +18,7 @@ export default () => {
       <Container>
         <AttackSection as="div" font={"parent"}>
           <Text
-            fonts={"sans"}
+            fontFamily={"sans"}
             color={"white"}
             as="h1"
             css={{

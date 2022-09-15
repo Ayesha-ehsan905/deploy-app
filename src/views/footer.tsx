@@ -17,14 +17,16 @@ export default () => {
 
         <Footer style={"childs"}>
           <Footer style={"child"}>
-            <Text css={{ color: "white", fonts: "$LexendDeca" }}>
+            <Text css={{ color: "white", fontFamily: "$LexendDeca" }}>
               Quick Links
             </Text>
             <Text css={{ color: "white" }}>Home</Text>
             <Text css={{ color: "white" }}>About</Text>
           </Footer>
           <Footer style={"child"}>
-            <Text css={{ color: "white", fonts: "$LexendDeca" }}>Socials</Text>
+            <Text css={{ color: "white", fontFamily: "$LexendDeca" }}>
+              Socials
+            </Text>
             <Text css={{ color: "white" }}>LinkedIn</Text>
             <Text css={{ color: "white" }}>Twitter</Text>
           </Footer>
@@ -35,7 +37,9 @@ export default () => {
             "@bp0": { ml: "90px" },
           }}
         >
-          <Text css={{ color: "white", fonts: "$LexendDeca" }}>Contact Us</Text>
+          <Text css={{ color: "white", fontFamily: "$LexendDeca" }}>
+            Contact Us
+          </Text>
           <Text css={{ color: "white" }}>Contact@dlt.alerts</Text>
           <Text css={{ color: "white" }}>
             Xilliams Corner Wine © 2017. 1112 A Market St # Ste B22,

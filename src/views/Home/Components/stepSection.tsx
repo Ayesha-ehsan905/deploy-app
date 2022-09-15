@@ -11,7 +11,7 @@ export default () => {
       <Container>
         <StepSectionHeading as="div" style={"parent"}>
           <Text
-            fonts={"sans"}
+            fontFamily={"sans"}
             color={"white"}
             as="h1"
             css={{
@@ -56,7 +56,7 @@ export default () => {
                 css={{
                   ft: "24px",
                   ml: "30px",
-                  fonts: "$LexendDeca",
+                  fontFamily: "$LexendDeca",
                   fontWeight: "$Bold",
                 }}
               >
@@ -68,7 +68,7 @@ export default () => {
                   ft: "16px",
                   ml: "30px",
                   mr: "20px",
-                  fonts: "$inter",
+                  fontFamily: "$inter",
                   fontWeight: "normal",
                 }}
               >
@@ -104,7 +104,7 @@ export default () => {
                 css={{
                   ft: "24px",
                   ml: "30px",
-                  fonts: "$LexendDeca",
+                  fontFamily: "$LexendDeca",
                   fontWeight: "$Bold",
                 }}
               >
@@ -116,7 +116,7 @@ export default () => {
                   ft: "16px",
                   ml: "30px",
                   mr: "20px",
-                  fonts: "$inter",
+                  fontFamily: "$inter",
                   fontWeight: "normal",
                 }}
               >
@@ -145,13 +145,13 @@ export default () => {
                 <Remediate></Remediate>
               </StepSection>
               <Text
-                fonts={"sans"}
+                fontFamily={"sans"}
                 color={"white"}
                 as="h1"
                 css={{
                   ft: "24px",
                   ml: "30px",
-                  fonts: "$LexendDeca",
+                  fontFamily: "$LexendDeca",
                   fontWeight: "$Bold",
                 }}
               >
@@ -163,7 +163,7 @@ export default () => {
                   ft: "16px",
                   ml: "30px",
                   mr: "20px",
-                  fonts: "$inter",
+                  fontFamily: "$inter",
                   fontWeight: "normal",
                 }}
               >

@@ -21,7 +21,7 @@ export default () => {
         <InfoSection as="div" style={"parent"} css={{ m: "60px auto" }}>
           {/* 6th div heading */}
           <Text
-            fonts={"sans"}
+            fontFamily={"sans"}
             color={"white"}
             as="h1"
             css={{
