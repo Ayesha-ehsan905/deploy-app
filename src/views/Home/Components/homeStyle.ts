@@ -49,6 +49,7 @@ const InputSection = styled(Box, {
         height: "71px",
         br: "12px",
         bg: "rgba(255, 255, 255, 0.1)",
+        mt: "60px",
         "@bp0": {
           textAlign: "left",
           ml: "30px",
@@ -252,13 +253,42 @@ const InfoSectionContent = styled(Box, {
       },
     },
   },
+  "&.gird": {
+    display: "grid",
+    gridTemplateColumns: "auto auto",
+    fontSize: "30px",
+    rowGap: "20px",
+    columnGap: "20px",
+    "@bp0": {
+      gridTemplate: "none",
+    },
+
+    "@bp2": {
+      gridTemplate: "none",
+    },
+  },
+
+  "&.content_box": {
+    boxSizing: "border-box",
+    linearGradient:
+      "153.32deg, rgba(255, 255, 255, 0.3) -65.62%, rgba(255, 255, 255, 0.1) 83.28%",
+
+    boxShadow: "0px 4px 24px -1px rgba(0, 0, 0, 0.32)",
+    backdropFilter: "blur(50px)",
+    br: "12px",
+    mt: "30px",
+    display: "grid",
+    gridTemplateColumns: "auto auto",
+    // width: "100%",
+  },
   ".imageflex": {
-    flex: "1",
+    flex: 1,
   },
   ".contentflex": {
-    flex: "2",
-    display: "flex",
-    flexDirection: "column",
+    flex: 2,
+    m: "0 10px",
+    // display: "flex",
+    // flexDirection: "column",
   },
 });
 
@@ -427,7 +457,7 @@ const AttackSection = styled(Box, {
     font: {
       parent: {
         width: "100%",
-        mt: "80px",
+        m: "60px auto",
       },
     },
   },
@@ -464,6 +494,9 @@ const AttackSection = styled(Box, {
       width: "396px",
       top: "-225px",
       height: "187px",
+      "@bp2": {
+        display: "none",
+      },
     },
     "&:after": {
       content: "",
@@ -474,7 +507,23 @@ const AttackSection = styled(Box, {
       top: "140px",
       height: "230px",
       right: "95px",
+      "@bp2": {
+        display: "none",
+      },
     },
+  },
+  ".arrow_styles": {
+    position: "absolute",
+    display: "inline",
+    "@bp3": {
+      mt: "16%",
+    },
+  },
+  "&.heading": {
+    textAlign: "center",
+    fontSize: "32px",
+    fontWeight: "$Bold",
+    margin: "60px auto",
   },
 });
 export {

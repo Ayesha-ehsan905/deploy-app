@@ -16,9 +16,9 @@ export default () => {
   return (
     <>
       <Container>
-        <AttackSection as="div" font={"parent"}>
+        <AttackSection as="div" className="heading">
           <Text
-            fontFamily={"sans"}
+            fonts={"sans"}
             color={"white"}
             as="h1"
             css={{
@@ -37,7 +37,7 @@ export default () => {
           <AttackSection style={"child"}>
             <OfficeIcon />
             <InfoText fonts={"lg"}>Office</InfoText>
-            <AttackSection className="arrow_Style">
+            <AttackSection className="arrow_styles">
               <ArrowIcon />
             </AttackSection>
           </AttackSection>
@@ -53,7 +53,7 @@ export default () => {
           <AttackSection style={"child"}>
             <AttackIcon />
             <InfoText fonts={"lg"}>Phishing Attack</InfoText>
-            <AttackSection className="arrow_Style">
+            <AttackSection className="arrow_styles">
               <ArrowIcon />
             </AttackSection>
           </AttackSection>

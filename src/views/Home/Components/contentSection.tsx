@@ -25,7 +25,7 @@ export default () => {
             </Text>
           </ContentSection>
           <ContentSection content={"childImage"} as="div">
-            <Image src={pic1} />
+            <Image src={pic1} css={{ width: "90%" }} />
           </ContentSection>
         </ContentSection>
       </Container>

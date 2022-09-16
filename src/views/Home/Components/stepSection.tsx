@@ -11,7 +11,7 @@ export default () => {
       <Container>
         <StepSectionHeading as="div" style={"parent"}>
           <Text
-            fontFamily={"sans"}
+            fonts={"sans"}
             color={"white"}
             as="h1"
             css={{
@@ -145,7 +145,7 @@ export default () => {
                 <Remediate></Remediate>
               </StepSection>
               <Text
-                fontFamily={"sans"}
+                fonts={"sans"}
                 color={"white"}
                 as="h1"
                 css={{

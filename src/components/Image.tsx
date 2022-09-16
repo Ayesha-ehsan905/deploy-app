@@ -18,25 +18,7 @@ export const Image = styled("img", {
       medium: {
         width: "80%",
       },
-      large: {
-        width: "430px",
-        height: "390px",
-        left: "790px",
-        top: "-20px",
 
-        "@bp0": {
-          top: "1400px",
-          // right: "25px",
-          width: "300px",
-          left: "0px",
-          height: "250px",
-        },
-        "@bp2": {
-          top: "480px",
-          right: "25px",
-          left: "0px",
-        },
-      },
       xs: {
         width: "43%",
         ml: "60px",

@@ -6,7 +6,8 @@ import InfoSection from "./Components/infoSection";
 import ConnectSection from "./Components/connectSection";
 
 import AttackSection from "./Components/attackSection";
-import React from "react";
+import InfoSectionUpdated from "./Components/infoSectionUpdated";
+
 const Home = () => {
   return (
     <>
@@ -15,7 +16,8 @@ const Home = () => {
       <HeroSection />
       <StepSection />
       <AttackSection />
-      <InfoSection />
+      <InfoSectionUpdated />
+      {/* <InfoSection /> */}
       <ConnectSection />
     </>
   );
