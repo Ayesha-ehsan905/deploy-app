@@ -11,7 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-infoSection.tsx
+src\views\Home\Components\infoSection.tsx
 
 # Editor directories and files
 .vscode/*
