@@ -396,7 +396,7 @@ const Footer = styled(Box, {
       child: {
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
+        justifyContent: "flex-start",
 
         "@bp0": {
           ml: "30px",
