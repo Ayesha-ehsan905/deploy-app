@@ -15,7 +15,7 @@ export const Input = styled("input", {
           " 90.18deg, rgba(50, 56, 91, 0.57) 0%, rgba(26, 31, 65, 0.57) 100%",
         width: "98%",
         padding: "7px 15px",
-        height: "56px",
+        height: "58px",
         border: "1px solid #FFF",
         borderRadius: "4px",
         ft: "18px",

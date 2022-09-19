@@ -15,17 +15,30 @@ export default () => {
               fonts={"sans"}
               color={"white"}
               as="h1"
-              css={{ ft: "32px", fontWeight: "$Bold" }}
+              // css={{ ft: "32px", fontWeight: "$Bold" }}
+              Size={"md"}
             >
               Active Cyber Threats Require Better Insurance
             </Text>
-            <Text color={"muted"} css={{ ft: "24px" }}>
+            <Text
+              color={"muted"}
+              //  css={{ ft: "24px" }}
+              Size={"sm"}
+            >
               Integrated security and cyber insurance protect you from risks
               before they strike and enable faster recovery if they do
             </Text>
           </ContentSection>
           <ContentSection content={"childImage"} as="div">
-            <Image src={pic1} css={{ width: "90%" }} />
+            <Image
+              src={pic1}
+              css={{
+                width: "90%",
+                "@bp0": {
+                  // width: "100%",
+                },
+              }}
+            />
           </ContentSection>
         </ContentSection>
       </Container>

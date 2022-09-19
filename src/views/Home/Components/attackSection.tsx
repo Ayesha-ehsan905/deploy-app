@@ -21,10 +21,9 @@ export default () => {
             fonts={"sans"}
             color={"white"}
             as="h1"
+            Size={"md"}
             css={{
               textAlign: "center",
-              ft: "32px",
-              // mb: "90px",
               m: "60px auto",
               mb: "100px",
             }}

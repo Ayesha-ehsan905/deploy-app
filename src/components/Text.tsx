@@ -32,5 +32,20 @@ export const Text = styled("p", {
         color: "$muted",
       },
     },
+    Size: {
+      sm: {
+        ft: "24px",
+        "@bp0": {
+          ft: "18px",
+        },
+      },
+      md: {
+        ft: "32px",
+        fontWeight: "$Bold",
+        "@bp0": {
+          ft: "28px",
+        },
+      },
+    },
   },
 });

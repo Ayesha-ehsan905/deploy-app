@@ -22,9 +22,9 @@ export default () => {
             fonts={"sans"}
             color={"white"}
             as="h1"
+            Size={"md"}
             css={{
               textAlign: "center",
-              ft: "32px",
               mt: "100px",
             }}
           >

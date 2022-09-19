@@ -14,11 +14,16 @@ export default () => {
               fonts={"sans"}
               color={"white"}
               as="h1"
-              css={{ ft: "32px", fontWeight: "$Bold" }}
+              // css={{ ft: "32px", fontWeight: "$Bold" }}
+              Size={"md"}
             >
               How we're better
             </Text>
-            <Text color={"muted"} css={{ ft: "24px", fontWeight: "normal" }}>
+            <Text
+              color={"muted"}
+              // css={{ ft: "24px", fontWeight: "normal" }}
+              Size={"sm"}
+            >
               DLT Alert is the first active monitoring and self-validating cyber
               insurance company. Through direct integration with threat
               monitoring services, external incident validation sources, and the

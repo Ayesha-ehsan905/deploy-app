@@ -14,10 +14,9 @@ export default () => {
             fonts={"sans"}
             color={"white"}
             as="h1"
+            Size={"md"}
             css={{
               textAlign: "center",
-              ft: "32px",
-              fontWeight: "$Bold",
               m: "60px auto",
             }}
           >
@@ -53,8 +52,8 @@ export default () => {
               <Text
                 color={"white"}
                 as="h1"
+                Size={"sm"}
                 css={{
-                  ft: "24px",
                   ml: "30px",
                   fontFamily: "$LexendDeca",
                   fontWeight: "$Bold",
@@ -101,8 +100,9 @@ export default () => {
               <Text
                 color={"white"}
                 as="h1"
+                Size={"sm"}
                 css={{
-                  ft: "24px",
+                  // ft: "24px",
                   ml: "30px",
                   fontFamily: "$LexendDeca",
                   fontWeight: "$Bold",
@@ -148,8 +148,8 @@ export default () => {
                 fonts={"sans"}
                 color={"white"}
                 as="h1"
+                Size={"sm"}
                 css={{
-                  ft: "24px",
                   ml: "30px",
                   fontFamily: "$LexendDeca",
                   fontWeight: "$Bold",

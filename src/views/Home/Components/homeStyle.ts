@@ -27,8 +27,6 @@ const ContentSection = styled(Box, {
         ml: "60px",
         "@bp0": {
           width: "80%",
-          mr: "10px",
-          ml: "0px",
         },
       },
     },
@@ -52,7 +50,8 @@ const InputSection = styled(Box, {
         mt: "60px",
         "@bp0": {
           textAlign: "left",
-          ml: "30px",
+          width: "90%",
+          // ml: "30px",
         },
       },
       child: {
@@ -183,7 +182,7 @@ const StepSection = styled(Box, {
       box: {
         width: "70%",
         "@bp0": {
-          ml: "30px",
+          // ml: "30px",
           width: "90%",
           mt: "20px",
         },
@@ -309,9 +308,9 @@ const ConnectSection = styled(Box, {
         pb: "5%",
         mb: "10%",
         "@bp0": {
-          height: "50%",
+          // height: "50%",
           width: "80%",
-          mr: "40px",
+          // mr: "40px",
           pb: "10%",
           mb: "50%",
         },
@@ -353,6 +352,9 @@ const InfoText = styled(Text, {
         ft: "32px",
         pt: "80px",
         color: "$white",
+        "@bp0": {
+          ft: "28px",
+        },
       },
       md: {
         color: "$white",
@@ -366,6 +368,9 @@ const InfoText = styled(Text, {
         pl: "23%",
         pr: " 23%",
         pt: "1%",
+        "@bp0": {
+          ft: "18px",
+        },
       },
       lg: {
         color: "$white",
@@ -522,7 +527,7 @@ const AttackSection = styled(Box, {
   },
   "&.heading": {
     textAlign: "center",
-    fontSize: "32px",
+
     fontWeight: "$Bold",
     margin: "60px auto",
   },

@@ -12,8 +12,9 @@ export default () => {
           placeholder="Search"
           css={{
             "@bp0": {
-              width: "90%",
+              width: "96%",
               ml: "10px",
+              mr: "-5px",
             },
           }}
         ></Input>

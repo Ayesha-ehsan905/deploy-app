@@ -46,18 +46,7 @@ const navBar = () => {
                 width: "50%",
               }}
             >
-              <Image
-                size={"sm"}
-                src={logo}
-                css={{
-                  "@bp0": {
-                    // display: "none",
-                    mt: "20px",
-                    ml: "60px",
-                    mb: "0px",
-                  },
-                }}
-              />
+              <Image size={"sm"} src={logo} />
             </Box>
             <Box
               css={{

@@ -6,13 +6,15 @@ export const Image = styled("img", {
       sm: {
         ml: "20px",
         my: "20px",
+        width: "auto%",
+        height: "35%",
         "@bp0": {
           // display: "none",
-          mt: "20px",
-          ml: "60px",
-          mb: "0px",
-          width: "35%",
-          height: "31px",
+          // mt: "20px",
+          ml: "90px",
+          // mb: "0px",
+          width: "auto%",
+          height: "35%",
         },
       },
       medium: {
