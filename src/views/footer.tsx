@@ -46,6 +46,12 @@ export default () => {
           <Text css={{ color: "white" }}>+1 3243 3423 3232</Text>
         </Footer>
       </Footer>
+
+      <Footer style={"parent"}>
+        <Text css={{ textAlign: "center", color: "$white" }}>
+          © 2023 DLT Alert. All rights reserved.
+        </Text>
+      </Footer>
     </>
   );
 };
