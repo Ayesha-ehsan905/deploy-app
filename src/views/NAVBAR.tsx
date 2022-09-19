@@ -4,7 +4,6 @@ import { Navbar } from "../components/navBar";
 import { Box, Container } from "../components/Box";
 import { Button } from "../components/Button";
 import { Image } from "../components/Image";
-// import logo from "../assets/logo.png";
 import logo from "../assets/logo.png";
 import SideDrawer from "../components/sideDrawer/sideDrawer";
 import DrawerToggleButton from "../components/sideDrawer/DrawerToggleButton";

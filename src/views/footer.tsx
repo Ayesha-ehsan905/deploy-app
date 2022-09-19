@@ -1,11 +1,9 @@
-import pic2 from "../../../assets/2.png";
 import { Image } from "../components/Image";
 import { Text } from "../components/Text";
 import logo from "../assets/logo.png";
 import pic from "../assets/warranty.png";
 import { Footer } from "./Home/Components/homeStyle";
 
-import { Container } from "../components/Box";
 export default () => {
   return (
     <>

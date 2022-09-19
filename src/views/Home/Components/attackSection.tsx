@@ -1,4 +1,4 @@
-import { Container, Box } from "../../../components/Box";
+import { Container } from "../../../components/Box";
 import { Text } from "../../../components/Text";
 import {
   AlertIcon,
