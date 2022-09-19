@@ -16,9 +16,8 @@ const SideDrawer = (props) => {
           {/* child div */}
           <Box
             css={{
-              mt: "40px",
-              ml: "20px",
-              dislpay: "flex",
+              display: "flex",
+              flexDirection: "row",
             }}
           >
             <Text
@@ -26,8 +25,8 @@ const SideDrawer = (props) => {
               css={{
                 fontSize: "24px",
                 display: "inline",
-                mr: "30px",
-
+                mr: "10px",
+                ml: "30px",
                 cursor: "pointer",
               }}
               onClick={props.drawer}
@@ -35,9 +34,9 @@ const SideDrawer = (props) => {
               X
             </Text>
             <Image
-              size={"sm"}
+              size={"m_sm"}
               src={logo}
-              css={{ mt: "0px", ml: "0px" }}
+              // css={{ mt: "0px", ml: "0px" }}
             ></Image>
           </Box>
           <Span

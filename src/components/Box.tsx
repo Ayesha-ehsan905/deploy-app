@@ -24,6 +24,7 @@ export const Box = styled("div", {
       },
     },
   },
+  "&.mobile-nav": { dislpay: "flex", flexDirection: "row" },
 });
 
 export const Container = styled("div", {

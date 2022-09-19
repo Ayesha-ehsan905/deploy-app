@@ -20,7 +20,16 @@ export const Image = styled("img", {
       medium: {
         width: "80%",
       },
-
+      m_sm: {
+        ml: "20px",
+        my: "26px",
+        width: "auto%",
+        height: "35%",
+        "@bp0": {
+          width: "auto%",
+          height: "35%",
+        },
+      },
       xs: {
         width: "43%",
         ml: "60px",
