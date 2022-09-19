@@ -388,6 +388,7 @@ const Footer = styled(Box, {
         display: "flex",
         flexDirection: "row",
         justifyContent: "center",
+        paddingBottom: "40px",
         "@bp0": {
           flexDirection: "column",
         },
