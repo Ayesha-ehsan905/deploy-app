@@ -287,8 +287,8 @@ const InfoSectionContent = styled(Box, {
   ".contentflex": {
     flex: 2,
     m: "0 10px",
-    display: "flex",
-    flexDirection: "column",
+    // display: "flex",
+    // flexDirection: "column",
   },
 });
 
