@@ -32,6 +32,8 @@ export const Image = styled("img", {
       },
       xs: {
         width: "43%",
+        height: "auto",
+
         ml: "60px",
         pt: "11px",
         "@bp0": {
@@ -40,6 +42,7 @@ export const Image = styled("img", {
       },
       xss: {
         width: "30%",
+        height: "auto",
         ml: "60px",
         mt: "30px",
       },
